@@ -1,0 +1,39 @@
+/* Custom CSS for Expense & Budget Visualizer */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Chart Container Wrapper Fix */
+.chart-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  height: 260px;
+  margin: 0 auto;
+}
+
+.chart-container canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Custom Scrollbar for Transaction Feed */
+#transactionListContainer::-webkit-scrollbar {
+  width: 6px;
+}
+
+#transactionListContainer::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#transactionListContainer::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+.dark #transactionListContainer::-webkit-scrollbar-thumb {
+  background: #475569;
+}
